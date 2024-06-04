@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/6dd69ec963.js" crossorigin="anonymous"></script>
+  <title>Boostrap Ejercicio</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid p-4">
+      <a class="navbar-brand">
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
+      </a>
+      <div class="d-flex mb-3">
+        <div class="p-2">
+          <button type="button" class="btn btn-success">Crear un post</button>
+        </div>
+        <div class="p-2">
+          <div class="dropdown" data-bs-theme="light" dropzone="dropzone">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu" style="left: -110px;" aria-labelledby="dropdownMenuButtonLight">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" style="color: crimson;" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <!--   NAV TRANS -->
+  <div class="row">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+            class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+            class="fa-solid fa-image-portrait"></i></button>
+      </li>
+    </ul>
+
+  </div>
+
+  <!--   Grilla -->
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div Clase="container-fluid">
+        <!-- primera columna -->
+        <div class="row p-1">
+          <div class="col-4 p-3">
+            <img height="500px" width="500px" padding="10px"
+              src="https://cdn.midjourney.com/c590121c-4a04-4954-bf1c-217fc345af8d/0_2.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/631eba37-d432-4999-bee9-3f50361cfddc/0_2.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/28ca1e15-d365-4382-a179-ec62ed838417/0_1.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <!-- Segunda columna -->
+        <div class="row p-1">
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/b62f825f-1649-4051-9350-886b2fa52663/0_0.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 p-1">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/170a862f-e198-4b57-8b15-0d14bd37e03b/0_2.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src=" https://cdn.midjourney.com/fef1e645-71d4-4226-a3b4-999a63393e38/0_3.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <!-- Tercera columna -->
+        <div class="row p-3">
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/45f64508-50d6-48e8-962e-cea279e929c8/0_1.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/8a0de9cd-6e42-4edf-855a-7880c67e5073/0_0.jpeg" alt="" class="img-fluid">
+          </div>
+          <div class="col-4 p-3">
+            <img height="500px" width="500px"
+              src="https://cdn.midjourney.com/cc35e245-c36d-41f0-9053-a69880da86c0/0_3_384_N.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="Container post mx-auto p-3 ">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="card">
+              <div class="hstack gap-3">
+                <div class="p-2">
+                  <h3 class="card-title">Litle Puppy</h3>
+                </div>
+                <div class="p-2 ms-auto">
+                  <h5 class="card-title">01/06</h5>
+                </div>
+              </div>
+              <img src="https://smylepets.com/wp-content/uploads/2021/10/comprar-border-collie.jpg.webp "
+                class="card-img-top" alt="..." class="img-fluid">
+              <div class="card-body">
+                <div class="mx-auto p-3">
+                  <h4>5.890 Likes</h4>
+                </div>
+                <p class="card-text .text-justify">Si buscas un cachorro, Smylepets te pone en contacto con los mejores
+                  criaderos de
+                  España. Enviamos tu petición para que te informen de sus perritos disponibles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="Container post mx-auto p-3 ">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="card">
+              <div class="hstack gap-3">
+                <div class="p-2">
+                  <h3 class="card-title">Golden Retriver Cachorro</h3>
+                </div>
+                <div class="p-2 ms-auto">
+                  <h5 class="card-title">01/06</h5>
+                </div>
+              </div>
+              <img style="width: 100%;"
+                src="https://img.freepik.com/fotos-premium/fondo-retrato-cachorro-golden-retriever_1102-4650.jpg"
+                class="card-img-top img-fluid max-width: 100%;" alt="..." class="img-fluid">
+              <div class="card-body">
+                <div class="mx-auto p-3">
+                  <h4>6.890 Likes</h4>
+                </div>
+                <p class="card-text .text-justify">Si buscas un cachorro, Smylepets te pone en contacto con los mejores
+                  criaderos de
+                  España. Enviamos tu petición para que te informen de sus perritos disponibles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="Container post mx-auto p-3 ">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="card">
+              <div class="hstack gap-3">
+                <div class="p-2">
+                  <h3 class="card-title">Border adolcencente</h3>
+                </div>
+                <div class="p-2 ms-auto">
+                  <h5 class="card-title">01/06</h5>
+                </div>
+              </div>
+              <img style="width: 100%;" src="https://cdn.midjourney.com/25752bca-b24e-44ca-b04c-2e9f8e52238d/0_3.jpeg"
+                class="card-img-top img-fluid max-width: 100%;" alt="..." class="img-fluid">
+              <div class="card-body">
+                <div class="mx-auto p-3">
+                  <h4>6.890 Likes</h4>
+                </div>
+                <p class="card-text .text-justify">Cachorro de Border Collin hecho con Inteligencia artificial
+                  generativa. usando Midjourney</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+      <!-- java codigo -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
